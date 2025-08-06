@@ -213,8 +213,23 @@ nav .right img{
     main .hero-section{
         padding: 0 30px
     }
+}
 
-    
+@media (max-width: 600px){
+    nav{
+        background: none;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    nav .right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
 }
 
 

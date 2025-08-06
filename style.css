@@ -124,8 +124,6 @@ nav .right img{
     border-style: solid;
     border-color: var(--alt-color-1);
     border-radius: 20%;
-    display: flex;
-    justify-content: right;
     flex: 2;
     width: 400px;
 }

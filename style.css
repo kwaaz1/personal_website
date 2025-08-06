@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "Spectral";
+    src: url(fonts/Spectral/Spectral-Regular.ttf);
+}
+
+:root{
+    --text-color: #eeefe0;
+    --link-color: #7FC5DC;
+    --background-color: #0B1E38;
+    --alt-color-1: #173679;
+    --alt-color-2: #4888C8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Spectral', sans-serif;
+    background-color: var(--background-color);
+}
+
+/*NAV BAR*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 100px
+}
+
+nav .left a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 1000;
+    
+    transition: font-size 0.3s ease-in-out
+}
+
+nav .left a:hover{
+    font-size: 35px;
+}
+
+nav .right a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+    background-color: var(--alt-color-1);
+    padding: 15px;
+    border-radius: 100px;
+
+    transition: font-size 0.3s ease-in-out;
+}
+
+nav .right a:hover{
+    font-size: 18px;
+}
+
+nav .right img{
+    margin: -20px 0;
+}
+
+/*SECTION 1: Hero*/
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 30px;
+}
+
+.hero-section .text{
+    color: var(--text-color);
+    flex: 5;
+}
+
+.hero-section .text h2{
+    font-size: 45px;
+}
+
+.hero-section .text .links{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.hero-section .text .links a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--alt-color-1);
+    border-radius: 10px;
+    margin-right: 10px;
+
+    transition: background-color 0.3s ease-in, font-size 0.3s ease-in;
+}
+
+.hero-section .text .links a:hover{
+    background-color: var(--alt-color-2);
+    font-size: 15px;
+}
+
+.hero-section .text .links img{
+    margin: -10px;
+    margin-right: 1px;
+}
+
+.hero-section .text .links span{
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+.hero-section .headshot img{
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--alt-color-1);
+    border-radius: 20%;
+    display: flex;
+    justify-content: right;
+    flex: 2;
+    width: 400px;
+}
+
+/*Section 2: Skills*/
+.skills-section{
+    padding: 0 50px;
+    color: var(--text-color);
+}
+
+.skills-section .text h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: var(--alt-color-1);
+    width: 200px;
+    padding: 10px 5px;
+
+    border: var(--alt-color-2);
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+
+    border-radius: 10px;
+}
+
+.skills-section .cells .cell span{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.skills-section img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+@media (max-width:850px){
+    /*Section 1*/
+    .hero-section .text h2{
+        font-size: 30px
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img{
+        width: 300px;
+    }
+
+    /*Section 2*/
+    .hero-section .text
+}
+
+
+@media (max-width: 750px){
+    /*NAV BAR*/
+    nav{
+        padding: 0 30px;
+    }
+    nav .right a{
+        font-size: 20px
+    }
+
+    nav .right .img{
+        width: 20px;
+        border-radius: 50%;
+    }
+
+    nav .right a span{
+        display: none
+    }
+
+    main .hero-section{
+        padding: 0 30px
+    }
+
+    
+}
+
+
+/*
+footer{
+    display: none;
+    justify-content: left;
+    align-items: center;
+    padding: 1rem;
+}
+    */

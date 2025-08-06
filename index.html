@@ -1,15 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Test Page</title>
-  <style>
-    body { font-family: sans-serif; background: #f4f4f4; padding: 20px; }
-    h1 { color: darkgreen; }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome!</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
 <body>
-  <h1>Is this even working?</h1>
-  <p>This is a basic HTML page.</p>
-  <a href="https://openai.com">Visit OpenAI</a>
+  <!--Navigation Bar-->
+  <nav>
+    <div class = "left">
+      <a href = "\">An Tiet</a>
+    </div>
+    <div class="right">
+        <a href="https://github.com" target=_blank rel="noopener noreferrer">
+          <img src="images/icons/github_icon.png" alt="Github logo" width= "50px" height="50px" >
+          <span>Github</span>
+        </a>
+
+        <a href="https://www.linkedin.com" target=_blank rel="noopener noreferrer">
+          <img src="images/icons/linkedin_icon.png" alt="Linkedin logo" width= "50px" height="50px" >
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="mailto:test@gmail.com">
+          <img src="images/icons/email_icon.png" alt="Mail icon" width= "50px" height="50px" >
+          <span>Email Me!</span>
+        </a>
+
+    </div>
+
+  </nav>
+
+  <main>
+    <!--Section 1: hero-->
+    <section class="hero-section">
+      <div class = "text">
+        <h2>Hello, i'm An!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus aut aliquid voluptas optio corrupti deserunt esse corporis vero, perspiciatis mollitia iusto, asperiores nobis maxime quas deleniti ut alias odio dolore praesentium omnis repellendus velit modi. Repudiandae sed consequatur iure velit facere, enim voluptatem ut alias tempore? Reiciendis voluptatibus recusandae quibusdam soluta nam laborum dicta quis tenetur commodi. Dignissimos, ullam impedit inventore labore maxime quae at nam accusamus nisi vero eaque facilis et aliquam ab fuga tempore cum ducimus sunt! Aspernatur sed, soluta, nisi accusantium, repudiandae architecto in voluptatum voluptates possimus libero ab. Corrupti tempore, voluptates doloribus consequatur reiciendis rem.</p>
+
+        <div class = "links">
+          <a href="#skills">
+            <img src="images/icons/star_icon.png" alt="Collection of stars" width="30px",height="30px">
+            <span>Skills</span>
+          </a>
+
+          <a href="#resume">
+            <img src="images/icons/star_icon.png" alt="Collection of stars" width="30px",height="30px">
+            <span>Resume</span>
+          </a>
+
+          <a href="#contact">
+            <img src="images/icons/star_icon.png" alt="Collection of stars" width="30px",height="30px">
+            <span>Contact</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class = "headshot">
+        <img src="images/hero_image.JPG" alt="An Tiet's hero image">
+      </div>
+
+    </section>
+
+    <!--Section 2: Skills-->
+    <section id="skills" class = "skills-section">
+      <h2>Skills</h2>
+
+      <div class = "text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ab officia? Aliquid nam maiores tempora unde odit! Ullam numquam dolorum illo. Necessitatibus ex adipisci repellendus ipsum voluptates exercitationem reiciendis iusto!
+      </div>
+
+      <div class="cells">
+        <div class = "cell">
+            <img src="images/icons/python_icon.png">
+            <span>Python</span>
+        </div>
+
+        <div class = "cell">
+            <img src="images/icons/pandas_icon.png">
+            <span>Pandas</span>
+        </div>
+
+        <div class = "cell">
+            <img src="images/icons/html_icon.png">
+            <span>HTML</span>
+        </div>
+
+        <div class = "cell">
+            <img src="images/icons/css_icon.png">
+            <span>CSS</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Section 3: Resume-->
+    <section id="resume"></section>
+
+    <!--Section 4: Contact--> 
+    <section id ="contact"></section>
+  </main>
+  <footer>
+    <a href="https://icons8.com/icons/" target=_blank rel="noopener noreferrer"><p>Icons by Icons8</p></a>
+  </footer>
 </body>
 </html>

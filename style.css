@@ -229,6 +229,24 @@ nav .right img{
         background: none;
     }
 
+    .hero-section .links{
+        display: flex;
+        justify-content: left;
+    }
+
+    .hero-section .links img{
+        width: 30px;
+    }
+    }
+
+    .hero-section .links a{
+        font-size: 15px;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+    }
+
+
 }
 
 

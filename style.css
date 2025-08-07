@@ -248,6 +248,9 @@ nav .right img{
     font-family: "Spectral";
     font-weight: 200;
     padding: 5px 10px;
+
+    width: clamp(300px, 60vw, 800px);
+    height: clamp(150px, 30vh, 400px);
 }
 
 .contact-section form button{
@@ -284,6 +287,11 @@ nav .right img{
         width: 300px;
     }
 
+    /*Section 4*/
+    .contact-section{
+        flex-direction: column;
+    }
+
 
 }
 
@@ -306,13 +314,12 @@ nav .right img{
         display: none
     }
 
-    .hero-section{
-        padding: 0 30px
-    }
-
-    .skills-section{
+    .main{
         padding: 0 30px;
     }
+
+
+    
 }
 
 @media (max-width: 600px){
@@ -327,6 +334,7 @@ nav .right img{
         padding: 2px;
         margin: 0px;
         background: none;
+        border: none;
     }
 
     .hero-section .links{
@@ -344,6 +352,8 @@ nav .right img{
         margin: 0px;
         justify-content: center;
     }
+
+
 
 
 }

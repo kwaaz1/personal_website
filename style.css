@@ -56,7 +56,11 @@ nav .right a{
     margin: 0 10px;
     background-color: var(--alt-color-1);
     padding: 15px;
-    border-radius: 100px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--alt-color-2);
+    border-radius: 10px;
 
     transition: font-size 0.3s ease-in-out;
 }
@@ -98,7 +102,12 @@ nav .right img{
     display: inline-block;
     padding: 5px 10px;
     background-color: var(--alt-color-1);
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--alt-color-2);
     border-radius: 10px;
+
     margin-right: 10px;
 
     transition: background-color 0.3s ease-in, font-size 0.3s ease-in;
@@ -135,7 +144,6 @@ nav .right img{
 }
 
 .skills-section .text h2{
-    text-align: center;
     font-size: 30px;
 }
 
@@ -152,12 +160,12 @@ nav .right img{
 
     background-color: var(--alt-color-1);
     width: 200px;
-    padding: 10px 5px;
+    padding: 5px 0px;
 
     border: var(--alt-color-2);
     border-width: 2px;
     border-style: solid;
-    margin: 10px;
+    margin: 20px;
 
     border-radius: 10px;
 }
@@ -173,6 +181,35 @@ nav .right img{
     margin-right: 10px;
 }
 
+/*SECTION 3: Resume*/
+.resume-section{
+    color: var(--text-color);
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.resume-section h3{
+    font-size: 30px;
+}
+
+.resume-section .resume{
+    display: flex;
+    justify-content: center;
+}
+
+.resume-section .resume embed{
+    width: 80vw;
+    height: 70vh;
+    border: 2px solid var(--alt-color-2);
+    border-radius: 10px;
+    display: flex;
+    }
+
+
+
 @media (max-width:850px){
     /*Section 1*/
     .hero-section .text h2{
@@ -187,8 +224,7 @@ nav .right img{
         width: 300px;
     }
 
-    /*Section 2*/
-    .hero-section .text
+
 }
 
 
@@ -203,15 +239,19 @@ nav .right img{
 
     nav .right .img{
         width: 20px;
-        border-radius: 50%;
+        border-radius: 10px;
     }
 
     nav .right a span{
         display: none
     }
 
-    main .hero-section{
+    .hero-section{
         padding: 0 30px
+    }
+
+    .skills-section{
+        padding: 0 30px;
     }
 }
 
@@ -237,7 +277,6 @@ nav .right img{
     .hero-section .links img{
         width: 30px;
     }
-    }
 
     .hero-section .links a{
         font-size: 15px;
@@ -248,7 +287,6 @@ nav .right img{
 
 
 }
-
 
 /*
 footer{

@@ -143,9 +143,6 @@ nav .right img{
     color: var(--text-color);
 }
 
-.skills-section .text h2{
-    font-size: 30px;
-}
 
 .skills-section .cells{
     display: flex;
@@ -173,7 +170,7 @@ nav .right img{
 .skills-section .cells .cell span{
     font-size: 20px;
     font-weight: 300;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .skills-section img{
@@ -191,23 +188,86 @@ nav .right img{
     gap: 40px;
 }
 
-.resume-section h3{
-    font-size: 30px;
-}
-
 .resume-section .resume{
     display: flex;
     justify-content: center;
 }
 
 .resume-section .resume embed{
-    width: 80vw;
-    height: 70vh;
+    height: clamp(300px, 100vw, 600px);
+    width: clamp(500px, 100vw, 1000px);
     border: 2px solid var(--alt-color-2);
     border-radius: 10px;
     display: flex;
     }
 
+
+/*SECTION 4: Contact*/
+
+.contact-section{
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    margin-bottom: 100px
+}
+
+.contact-section .text{
+    flex: 50%;
+    margin-top: 20px;
+}
+
+.contact-section form{
+    flex: 50%;
+    flex-direction: column;
+    display: flex;
+    margin: 30px;
+}
+
+.contact-section form input{
+    margin-bottom: 10px;
+    border: 2px var(--alt-color-2) solid;
+    background-color: var(--text-color);
+    border-radius: 10px;
+
+    color: #111111;
+    font-size: 15px;
+    font-family: "Spectral";
+    font-weight: 200;
+    padding: 5px 10px;
+}
+
+.contact-section form textarea{
+    margin-bottom: 10px;
+    border: 2px var(--alt-color-2) solid;
+    background-color: var(--text-color);
+    border-radius: 10px;
+
+    color: #111111;
+    font-size: 15px;
+    font-family: "Spectral";
+    font-weight: 200;
+    padding: 5px 10px;
+}
+
+.contact-section form button{
+    margin: 10px;
+    border: 2px var(--alt-color-2) solid;
+    background-color: var(--alt-color-1);
+    border-radius: 10px;
+
+    color: var(--text-color);
+    font-size: 15px;
+    font-family: "Spectral";
+    font-weight: 200;
+
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.contact-section form button:hover{
+    background-color: var(--alt-color-2);
+    border-color: var(--text-color)
+}
 
 
 @media (max-width:850px){
